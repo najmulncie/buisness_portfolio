@@ -1,0 +1,121 @@
+@media only screen and (max-width: 768px){
+    .wrapper{
+        width: 95%;
+    }
+    .header_section{
+        height: 74px;
+      }
+    .header_left{
+        width: 52%;
+    }
+    .header_right{
+        width: 48%;
+        padding: 26px 0px;
+    }
+    .header_search{
+       display: none;
+      }
+    .header_icon{
+        text-align: right;
+    }
+    .header_icon ul li{
+        float: none;
+        display: inline-block;
+    }
+
+
+
+    /* nav responsive design */
+    /* nav .logo { padding-top: 8px } */
+	nav .menu-toggle { display: inline-block;margin-top: 20px; }
+	nav .menu { display: none; clear: both }
+	nav .menu > ul { float: none }
+	nav .menu li { width: 100%; border: 0 }
+	nav .menu li:last-child { margin: 0 0 15px 0 }
+	nav .menu li a,
+	nav .open-submenu {
+		display: block;
+		background: #168E88;
+		padding: 10px;
+		margin: 2px 0 0 0;
+        color: white;
+	}
+	nav .menu ul ul {
+		position: static;
+		background: transparent;
+		display:none
+	}
+	nav .menu ul ul a { background: transparent }
+	nav .menu ul ul a:hover { background: #FFBB22 }
+    /* nav responsive design end */
+
+
+
+    .circle{
+        transform: translate(44%,-10px);
+       }
+    .about_left{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+      }
+      .same_popular{
+        width: 99%;
+        margin-right: 0px;
+        margin-bottom: 25px;
+      }
+      .same_popular img{
+          width: 100%;
+      }
+      .event_one{
+        width: 100%;
+        background: #1ca79a;
+        text-align: center; 
+        margin-right: 0px;
+      }
+      .event_two{
+        width: 100%;
+        margin-right: 0px;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .event_two h3{
+          margin-top: 70px;
+      }
+      .event_three {
+          float:none;
+      }
+      .event_three img{
+        width: 100%;
+        /*! text-align: center; */
+      }
+      .same_footer{
+        width: 22%;
+        margin-right: 3%;
+      }
+      .same_footer input{
+        width: 90%;
+      }
+}
+/* @media(max-width:991px) {
+	nav .logo { padding-top: 8px }
+	nav .menu-toggle { display: inline-block }
+	nav .menu { display: none; clear: both }
+	nav .menu > ul { float: none }
+	nav .menu li { width: 100%; border: 0 }
+	nav .menu li:last-child { margin: 0 0 15px 0 }
+	nav .menu li a,
+	nav .open-submenu {
+		display: block;
+		background: #44b7d0;
+		padding: 10px;
+		margin: 2px 0 0 0
+	}
+	nav .menu ul ul {
+		position: static;
+		background: transparent;
+		display:none
+	}
+	nav .menu ul ul a { background: transparent }
+	nav .menu ul ul a:hover { background: #FFBB22 }
+} */

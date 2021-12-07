@@ -1,0 +1,1069 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   TYPHOGRAPHY START.......
+   ========================================================================== */
+*{margin: 0; padding: 0; outline: 0;}
+body{
+  font-family: sans-serif,Arial, Helvetica;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: orange;
+}
+li{
+  list-style-type: none;
+}
+img{
+  width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 10px 0px;
+}
+p{
+  margin: 10px 0px;
+}
+.float_left{
+  float: left;
+}
+.float_right{
+  float: right;
+}
+.clear{
+  overflow: hidden;
+}
+
+.full_wrapper{
+  width: 100%;
+  height: auto;
+}
+.wrapper{
+  width: 1200px;
+  margin: 0 auto;
+}
+   /* ==========================================================================
+   TYPHOGRAPHY END.......
+   ========================================================================== */
+
+/* ==========================================================================
+   header section start.......
+   ========================================================================== */
+
+.header_section{
+  background: #000000;
+  /* overflow:hidden; */
+  height: 50px;
+}
+.header_left{
+  width: 50%;
+  padding: 14px 0px;
+
+ 
+}
+.header_left ul{
+}
+.header_left ul li{
+  float: left;
+  margin-right: 35px;
+}
+.header_left ul li a{
+  color: white;
+  font-family:'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+.header_left ul li a:hover{
+  
+}
+.header_left_icon{
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+
+.header_right{
+  width: 39%;
+  padding: 14px 0px;
+
+}
+.header_icon{
+  
+}
+.header_icon ul{
+ 
+}
+.header_icon ul li{
+  float: left;
+}
+.header_icon ul li a{
+  margin-right: 32px;
+  color: white;
+  transition: all 0.3s ease;
+}
+.header_icon ul li:last-child a{
+  margin-right: 10px;
+}
+.header_icon ul li a:hover{
+  color: #19988C;
+}
+.same_icon{
+
+}
+.header_search{
+  margin-left: 10px;
+}
+.header_search_btn{
+  font-size: 14px;padding: 4px 14px;width: 228px;
+  border-radius: 5px;
+  border:none;
+}
+
+
+/* ==========================================================================
+   header section end.......
+   ========================================================================== */
+
+
+/* ==========================================================================
+   nav section sTrt.......
+   ========================================================================== */
+
+/* .nav_section{
+  background: #fff;
+  height: 80px;
+}
+.nav_logo{
+  width: 40%;
+}
+.nav_logo img{
+  width: 75px;
+  margin-top: 10px;
+}
+.menu{
+ width: 50%;
+ text-align: right;
+}
+.menu ul{
+ padding: 28px 0px ;
+}
+.menu ul li{
+  display: inline-block;
+  margin-right: 42px;
+}
+.menu ul li:last-child{
+  margin-right: 0px;
+}
+.menu ul li a{
+  text-transform: capitalize;
+  color: #333;
+  font-family:'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+} */
+nav {
+	width: 100%; 
+  background: #fff;
+  height: 80px;
+}
+nav .navbar {
+	width: 100%;
+	margin:0 auto;
+}
+nav a { color: #fff }
+nav .logo {
+	float: left;
+	display: inline-block;
+	font-size: 30px;
+	font-weight: bold;
+  padding: 5px 0px;
+}
+nav .menu-toggle {
+	cursor: pointer;
+	display: none;
+	float: right;
+	padding: 12px;
+	margin: 10px 0;
+	background: #62b38d;
+	transition: background-color .5s
+}
+nav .icon-bar {
+	background-color: #fff;
+	display: block;
+	width: 22px;
+	height: 2px
+}
+nav .icon-bar + .icon-bar { margin-top: 4px }
+
+nav .menu ul { float: right; }
+nav .menu li {
+	float: left;
+	list-style: none;
+	/* border-left: 2px solid #171717 */
+}
+nav .menu li:first-child { border-left: 0 }
+nav .menu li a,
+nav .open-submenu {
+	color: #ddd;
+	cursor: pointer;
+	position: relative;
+	display: block;
+	padding: 28px 20px;
+	transition: background-color .3s;
+  text-transform: capitalize;
+  color: #333;
+  font-family:'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+nav .menu li a:hover,
+nav .open-submenu:hover ,
+nav .open-submenu.active,
+nav .menu-toggle.active  {
+	color: #18A891;
+	transition: background-color .5s;
+  border-bottom: 2px solid #18A891;
+}
+nav .menu ul ul {
+	z-index: 100;
+	display: none;
+	float: none;
+	position: absolute;
+	background: #44b7d0;
+	/*width: 200px;*/
+}
+nav .menu ul ul li {
+	float: none;
+	border: 0
+}
+nav .menu ul ul a:hover {
+	background: #1a6d9d;
+	transition: background-color .3s
+}
+
+
+
+/* ==========================================================================
+   nav section end.......
+   ========================================================================== */
+
+   /* ==========================================================================
+   slider section end.......
+   ========================================================================== */
+.slider_section{
+  background:linear-gradient( rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+   url('../img/Axis_image.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+
+  /* height: 500px; */
+}
+.slider_content{
+  padding: 110px 10px;
+}
+.slider_content h4{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 0px;
+  color: #FFFFFF;
+}
+.slider_content h1{
+  margin: 0px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 60px;
+  color: white;
+}
+.slider_content p{
+  margin-top: 0px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+.slider_btn{
+  margin-top: 38px;
+  
+}
+.view_course{
+  float:left;
+  font-family: 'Montserrat', sans-serif;
+}
+.view_course .view{
+  background:transparent;
+  border: 2px solid #D5D2D0;
+  color: white;
+  font-size: 14px;
+  padding: 18px 28px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  margin-right: 15px;
+  cursor: pointer;
+}
+ .Subscribe .sbus{
+  background:transparent;
+  border: 2px solid #D5D2D0;
+  color: white;
+  font-size: 14px;
+  padding: 18px 28px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+  
+}
+.circle{
+  
+ transform: translate(50%,-10px);
+}
+.circle ul li{
+  display: inline-block;
+  width:10px;
+  height: 10px;
+  background: transparent;
+  border: 2px solid #D5D2D0;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.circle .circle_active{
+  background: #D5D2D0;
+}
+.circle ul li:hover{
+  background: #D5D2D0;
+}
+
+
+   /* ==========================================================================
+   slider section end.......
+   ========================================================================== */
+
+ /* ==========================================================================
+   about section start.......
+   ========================================================================== */
+
+.about_section{
+  background: #EFEFEF;
+  padding: 80px 0px;
+  overflow: hidden;
+}
+.about_left{
+  position: relative;
+  background:linear-gradient( rgba(87, 87, 88, 0.52), rgba(105, 100, 104, 0.73)), url('../img/about_img.jpg');
+  width: 560px;
+  height: 330px;
+  margin-right: 30px;
+}
+
+.about_left .about_vdo_icon{
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+}
+
+.about_right{
+
+}
+.about_right h2{
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: #1ca79a;
+  margin: 0px;
+
+}
+.about_right p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #3c3c3c;
+}
+.about_right .about_btn{
+  padding: 16px 30px;
+  color: #fff;
+  background: #1CA79A;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  border-radius: 5px;
+  margin-top: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+ /* ==========================================================================
+   about section end.......
+   ========================================================================== */
+
+/* ==========================================================================
+   Popular section start.......
+   ========================================================================== */
+.popular_section{
+  background: #FFFFFF;
+  padding: 80px 0px;
+  overflow: hidden;
+}
+.popular_top h2{
+  text-align: center;
+  color: #1ca79a;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 48px;  
+  text-transform: capitalize;
+  margin-bottom: 48px;
+}
+.popular_content{
+  margin-bottom:45px;
+  overflow:hidden;
+}
+.same_popular{
+  width: 370px;
+  border: 2px solid #565656;
+  border-radius: 3px 3px 0px 0px;
+  margin-right: 39px;
+}
+.same_popular:last-child{
+  margin-right: 0px;
+}
+.same_popular img{
+  width: 370px;
+  height: 250px;
+  margin-bottom: 30px;
+  
+}
+.same_popular_content{
+  padding: 0px 30px;
+  
+}
+.same_popular_content h3{
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #1ca79a;
+  text-align: center;
+  margin:0px;
+}
+.same_popular_content p{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color:#000000;
+  padding: 20px 0px;
+  margin: 0px 0px 20px 0px;
+  border-bottom: 2px solid #1ca79a;
+}
+.populer_content_btn{
+  margin-bottom: 15px;
+}
+.pop_free_btn{
+
+}
+.pop_free_btn .free_btn{
+  padding: 8px 35px;
+  font-size: 14px;
+  font-family: 'Roboto Slab', serif;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #1ca79a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.pop_more_info_btn{
+  
+}
+.pop_more_info_btn .more_info_btn{
+  padding: 8px 35px;
+  font-size: 14px;
+  font-family: 'Roboto Slab', serif;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #1ca79a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.all_popular_btn{
+  text-align: center;
+}
+.all_popular_btn .all_cou_btn_pop{
+  padding: 8px 35px;
+  font-size: 14px;
+  font-family: 'Roboto Slab', serif;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #1ca79a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+   /* ==========================================================================
+   popular section end.......
+   ========================================================================== */
+
+
+   /* ==========================================================================
+   EVENTS section START.......
+   ========================================================================== */
+
+.event_section{
+  background: #EFEFEF;
+  padding: 80px 0px;
+}
+.event_top{}
+.event_top h2{
+  font-size: 48px;
+  color: #1ca79a;
+  margin-bottom: 48px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+}
+.event_middle{}
+.event_content{
+  /* border: 2px solid #333; */
+  overflow: hidden;
+  padding: 50px 50px;
+  margin-bottom: 40px;
+  background: #fff;
+  box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+
+}
+.event_one{
+  width: 180px;
+  height: 120px;
+  background: #1ca79a;
+  text-align: center; 
+  margin-right: 30px;
+}
+.event_one h2{
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 48px;
+  margin: 0px;
+  color: #fff;
+}
+.event_one h3{
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0px;
+  color: white;
+  text-transform: capitalize;
+}
+.event_one .see_details_evnts_btn{
+  margin-top: 28px;
+  background: #1ca79a;
+  width: 180px;
+  border: none;
+  padding: 14px 40px; 
+  text-transform: capitalize; 
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+.event_two{
+  width: 540px;
+  margin-right: 60px;
+
+}
+.event_two h3{
+  margin-top: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+}
+.event_two ul{}
+.event_two ul li{
+  margin-bottom: 5px;
+}
+.event_two ul li a{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+}
+.evnt_icn{
+  color: #1ca79a;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.event_two p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 40px;
+}
+.event_three img{
+  width: 278px;
+}
+.all_evnts_btn{
+  text-align: center;
+  margin-top: 20px;
+}
+.all_evnts_btn .all_events{
+  padding: 8px 35px;
+  font-size: 14px;
+  font-family: 'Roboto Slab', serif;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #1ca79a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+   
+   /* ==========================================================================
+   EVENTS section end.......
+   ========================================================================== */
+
+
+/*=============================
+   FOOTER PART START
+   =============================== */
+   .footer_top_bg{
+    background-color: #F1F8FB;
+    padding: 30px 0px;
+    height: auto;
+  }
+  .same_footer{
+    width: 285px;
+    margin-right: 20px;
+  }
+  .same_footer:last-child{
+    margin-right: 0px;
+  }
+  .same_footer img{
+    width: 60px;
+    height: 60px;
+  }
+  .same_footer h3{
+    text-align: left;
+    text-transform: capitalize;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+
+
+  }
+  .same_footer p{
+   text-align: justify;
+   font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 20px;
+ }
+.same_footer h3{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FF7A00;
+  text-transform: capitalize;
+}
+
+.same_footer a{
+  text-decoration:none;
+}
+
+.email,.phone{
+  color: #555555;
+   margin-right: 5px;
+   padding: 8px 0px 0px 0px;
+   display: inline-block;
+   font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+
+ }
+
+ .same_footer ul{
+
+ }
+.same_footer ul li{
+
+ }
+.same_footer ul li a{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #555555;
+  padding: 6px 0px;
+  display: block;
+}
+.same_footer span{
+  font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+color: #555555;
+}
+.same_footer input{
+  width: 238px;
+  height: 40px;
+  background: #FFFFFF;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  border:none;
+  padding: 0px 8px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #CCCCCC;
+}
+.same_footer button{
+  margin-top: 12px;
+  padding: 6px 25px;
+  text-transform: capitalize;
+}
+
+
+.fb_bg{
+  background: #D3D3D3;
+  height: auto;
+
+}
+.footer_bottom{
+  text-align: center;
+}
+
+ .footer_bottom p{
+   padding: 14px 0px;
+   text-align: center;
+   font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #555555;
+    margin: 0px;
+ }
+
+
+
+
+
+/*=============================
+  FOOTER PART END
+  =============================== */
+
+
+
+
+
+
+
+
+
+
+
+  /* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Roboto Slab', serif; */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
